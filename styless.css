@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "pp-sans-small-regular", Helvetica  
+}
+/* html{
+    scroll-behavior: smooth;
+} */
+.container .nav-heading{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  
+    margin-bottom: 10px;
+}
+.container .nav-img img{
+    margin-top: -25px;
+}
+.nav-heading .nav-2 .log{
+    border: 1px solid blue;
+    border-radius: 17px;
+    padding: 9px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+.display{
+    /* display: none; */
+    position: absolute;
+    width: 100%;
+    cursor: pointer;
+    top: 0;
+    margin-top: 70px;
+     transition: width 2s, height 4s;
+     height: 0;
+
+
+
+}
+.display{
+     top: -100px;
+     height: 0;
+     animation: drop 0.5s ease forwards;
+}
+
+@keyframes drop{
+    0%{transform: translateY(200px);
+
+     }
+    50%{
+        transform: translateY(400px);
+
+    }
+    100%{transform: translateY(50px);}
+}
+.paypal{
+    background-color: darkblue;
+    position: absolute;
+    width: 100%;
+    cursor: pointer;
+    top: 0;
+    margin-top: -4px;
+    background-color: darkblue;
+
+}
+.paypal-text h1{
+    font-weight: 400;
+}
+.pay-account  .woo{
+    text-decoration: none;
+}
+.pay-account.woo:hover{
+    text-decoration: overline;
+}
+.paypal .row .col-4 {
+    display: none;
+    padding: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-heading .nav-2 .sign{
+    background-color: #0070ba;
+    color: white;
+     border-radius: 17px;
+    padding: 9px 20px;
+    text-decoration: none;
+    font-weight: 400;
+    /* margin-right: 140px; */
+}
+.nav-1 .select{
+    font-weight: bolder;
+    font-size: 19x;
+    color: #666;
+    /* transition:  all 0.3s linear; */
+
+}
+.fa-angle-down{
+    transition:  all 0.3s linear;
+    font-size: 50px;
+    color: aqua;
+    
+
+}
+.nav-1:hover{
+     /* transform: rotate(180deg); */
+
+}
+.fa-angle-down:hover{
+     transform: rotate(180deg);
+}
+.nav-1 h3{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgb(35, 4, 4);
+    font-weight: 450;
+    font-weight: 500;
+    cursor: pointer;
+}
+.fa-angle-down{
+    font-weight: lighter;
+    font-size: 16px;
+}
+.row .col-4  a{
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.row .col-4  a:hover{
+    text-decoration: white;
+    
+}
+.row .col-4 span{
+    font-weight: 700;
+    font-weight: 15px;
+}
+.close-btn{
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 100;
+    cursor: pointer;
+}
+ .underline{
+    background-color: blue;
+    height: 5px;
+    width: 170px;
+     margin: 0 auto;
+    position: absolute;
+    top: 12;
+    margin-top: 65 px;
+    margin: 0 auto;
+    display: none;
+    left: 38%;
+}
+.under{
+    background: url(./BACKGROUND.jpg);
+     width: 100%;
+    height: 400px;
+    position: relative;
+}
+.background{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.background .first-words h3{
+        color: white;
+        font-size: 40px;
+        font-weight: 100px;
+        margin-bottom: 50px;
+}
+.background .link a{
+    text-decoration: none;
+    color: white;
+    background: #0070ba;
+    padding: 15px 70px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+.background .text{
+    margin-top: 30px;
+    color: white;
+}
+.background a{
+    font-weight: bold;
+        color: white;
+    text-decoration: none;
+}
+.background a:hover{
+    text-decoration:  blue;
+}
+
+/* FOR THE SECOND FUNCTION IN MY WHATSAPP */
+/* .fa-angle-down{
+    transition:  all 0.3s linear;
+
+}
+.fa-angle-down:hover{
+     transform: rotate(180deg);
+} */
+
+/* PAYPAL */
+.pay{
+    text-align: center;
+    margin-top: 80px;
+}
+.paypal-link a{
+    text-decoration: none;
+    border: 1px solid #0070ba;
+    padding: 15px 50px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+/* PAYPAL CONNECT */
+.paypal-connect{
+    background-color: #f7f9fa;
+    padding-top: 80px;
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 70px;
+
+}
+.line{
+    width: 100px;
+    margin: 0 auto;
+    color: black;
+}
+#num{
+    width: 8px;
+    border: 1px solid silver;
+    padding: 4px 11px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+#sign-up{
+    color: #0079ad;
+    font-weight: bold;
+    font-size: 15px;
+}
+#sign-up:hover{
+    text-decoration: underline;
+}
+.fa-angle-right{
+    font-size: 70px;
+    margin-left: 50px;
+    font-weight: lighter;
+    color: #666;
+}
+/* PAYPAL ACCOUNT */
+.paypal-account{
+    background-color: blue;
+    color: white;
+}
+.pay-account{
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+.woo{
+    font-weight: bold;
+    font-size: 15px;
+}
+/* GET STARTED */
+#started{
+    background-color: #f7f9fa;
+    text-align: center;
+}
+.get-started{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.started-link{
+    text-decoration: none;
+    color: white;
+    background-color: #0070ba;
+    width: 20px;
+    padding: 15px 70px;
+    border-radius: 40px;
+}
+/* FOOTER */
+.footer{
+    margin-top: 55px;
+}
+.footer-links ul {
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+}
+.footer-links ul li{
+    margin-left: 5px;
+    list-style: none;
+
+}
+.footer-links a{
+    text-decoration: none;
+    color: #666; 
+}
+.footer-links a:hover{
+    text-decoration: underline;
+}
+.under-footer ul{
+    display: flex;
+}
+.think {
+    display: flex;
+    justify-content: space-around;
+}
+.think li{
+    list-style: none;
+}
+.think .col-6 ul{
+    display: flex;
+}
+.think a{
+    text-decoration: none;
+    color: #666;
+    margin-left: 5px;
+}
+#move{
+    /* margin-left: 150px; */
+    display: flex;
+    justify-content: end;
+}
+.help a{
+    font-weight: bold;
+}
+.footer-para{
+    font-size: small;
+    color: #666;
+}
